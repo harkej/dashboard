@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+// css for landing home screen
+// default mode (portrait) for screens upto 640px width.
+body {
+  background-color: $primary-bg;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  .sidebar{
+    width: 5vw;
+    justify-content: space-between;
+    color: #000;
+    height: 100vh;
+    position: absolute;
+    img {
+      height: 10%;
+      width: 100%;
+      border-radius: 0 0 3px 0;
+    }
+    .icon-space {
+      justify-content: space-between;
+      height: 75vh;
+      background: linear-gradient(#3466f4, #5D62F1);
+      box-shadow: 10px 5px 10px 0px rgba(211,211,211,0.75);
+      border-right: #ccc solid 1px;
+      border-radius: 0 5px 0 0;
+      ul {
+        li {
+          padding: 1.5vw;
+          color: #ccc;
+          font-size: 1.2em;
+        }
+      }
+      a {
+        justify-content: flex-end;
+        margin-bottom: 8vh;
+        color: #ccc;
+      }
+    }
+  }
+  .main-content {
+    justify-content: space-between;
+    width: 95vw;
+    background:#f9f9f9;
+    margin-left: 5vw;
+    height: 100vh;
+    color: #000;
+    .header-container {
+      width: 100%;
+      height: 10vh;
+      justify-content: space-between;
+      .header-left {
+        .chev-left {
+          font-size: 2em;
+          color: #ccc;
+          padding: 4vh 1vw 0 4vw;
+          border-right: solid 1px #ccc;
+        }
+        h4 {
+          padding: 6vh 0 0 2vw;
+          font-weight: regular;
+        }
+      }
+      .header-right {
+        margin-right: 4vw;
+        h6 {
+          font-size: 0.8em;
+          padding: 6vh 2vw 0 0;
+        }
+        .header-top {
+          font-size: 1.5em;
+          color: #ccc;
+          margin: 5vh 1vw 0 0;
+        }
+      }
+    }
+    .content-row {
+      height: 40vh;
+      width: 100%;
+      box-sizing: border-box;
+      .balance-container {
+        text-align: left;
+        margin: 5vh 5vw;
+        width: 40%;
+        box-sizing: border-box;
+        h2 {
+          font-weight: 900;
+        }
+        .balance-col {
+          justify-content: space-between;
+          margin-top: 1vh;
+        }
+        .balance-row-1{
+          justify-content: space-between;
+          margin-top: 2vh;
+          height: 15vh;
+          .curr-bottom {
+            margin-top: 1vh;
+            font-size: 0.75em;
+            font-weight: 500;
+            .dollar {
+              padding-right: 0.25vw;
+            }
+            .conversion {
+              padding-right: 0.5vw;
+            }
+          }
+          .currency {
+            font-size: 0.8em;
+            font-weight: 600;
+          }
+          .currency-value {
+            font-size: 1.8em;
+            font-weight: 500;
+            padding-left: 1vw;
+          }
+          .sell-buy-order {
+            .func-box {
+              height: 7vh;
+              width: 3vw;
+              background: #fff;
+              padding: 0.5vh 0.5vw;
+              margin: 0 1vw;
+              font-size: 0.8em;
+              color: #255AF4;
+              span {
+                padding: 0.5vh 0;
+              }
+              #svg-icon {
+                font-size: 1.4em;
+              }
+            }
+          }
+        }
+        .balance-row-2 {
+          justify-content: space-between;
+          text-align: left;
+          h5 {
+            font-size: 0.8em;
+            font-weight: 500;
+          }
+          .curr-indicator {
+            font-size: 0.8em;
+            padding-right: 0.5vw;
+          }
+          .curr-value {
+            font-size: 1.4em;
+          }
+          .revenue {
+            margin-right: 2vw;
+            font-weight: 500;
+            div {
+              margin-top: 0.5vh;
+            }
+          }
+          .order-volume {
+            margin-right: 17.5%;
+            div {
+              margin-top: 0.5vh;
+            }
+          }
+        }
+      }
+      .accounts-container {
+        width: 45%;
+        margin: 4vh 2vw 4vh 1vw;
+        text-align: left;
+        box-sizing: border-box;
+        .title {
+          font-weight: 900;
+          font-size: 0.8em;
+          margin-right: 1vw;
+          color: black;
+        }
+        .small-icon {
+          font-size: 0.6em;
+          margin-right: 1vw;
+          color: #ccc;
+        }
+        .indicator {
+          color: #ccc;
+          margin-left: 1vw;
+          font-size: 1.4em;
+        }
+        .accounts-top {
+          justify-content: space-between;
+          .total-account {
+            font-size: 0.7em;
+            color: #ccc;
+            font-weight: 700;
+            padding-left: 1vw;
+          }
+          .active-index {
+            font-size: 0.7em;
+            font-weight: 900;
+            padding: 0 1vw;
+            overflow-y: hidden;
+            -webkit-transition: max-height 0.5s ease-in-out;
+            -moz-transition: max-height 0.5s ease-in-out;
+            -o-transition: max-height 0.5s ease-in-out;
+            transition: max-height 0.5s ease-in-out;
+          }
+        }
+        .carousel {
+          min-height: 0;
+          min-width: 0;
+        }
+      }
+    }
+    .graph-container {
+      width: 100%;
+      height: 35%;
+      text-align: left;
+      margin-top:4vh;
+      box-sizing: border-box;
+      .graph-header {
+        justify-content: space-between;
+        .graph-name {
+          margin-left: 5vw;
+          font-size: 0.75em;
+          font-weight: 900;
+          .separator {
+            margin-left: 1vw;
+            color: blue;
+          }
+          .type {
+            margin-left: 1vw;
+            font-weight: 700;
+            font-size: 0.8em;
+          }
+        }
+        .graph-tab {
+          margin-right: 5vw;
+        }
+      }
+      .graph {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .exchange {
+      width: 100%;
+      height: 8%;
+      justify-content: flex-end;
+      font-size: 1.5em;
+      box-sizing: border-box;
+      .exchange-icon {
+        background: #fff;
+        width: 5%;
+        height: 100%;
+        padding: 1.5vh 0;
+        color: #255AF4;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+.account-card {
+  margin: 2vh 2.5vw;
+  justify-content: space-around;
+  width: 50mm;
+  height: 30mm;
+  background: linear-gradient(to top, #425FF2 , #5261f2);
+  font-size: 0.75em;
+  color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  div {
+    padding: 1.25vh 0.75vw;
+  }
+  .card-number {
+    .secret-code {
+      padding-left: 1vw;
+      font-size: 2.5em;
+      font-weight: 900;
+    }
+  }
+  .card-name {
+    font-weight: 900;
+  }
+  .card-type {
+    justify-content: space-between;
+    font-size: 0.65em;
+  }
+}
+
+.tab {
+  padding: 1vh 1vw;
+  font-size: 0.8em;
+  color: #323232;
+}
+
+.active-tab {
+  border: 1px solid blue;
+  background: blue;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.rate {
+  color: red;
+  font-size: 0.7em;
+  padding-left: 1vw;
+}
+
+.push-down {
+  margin-top: 1vh;
+}
+
+.active-account {
+  width: 60mm;
+  height: 36mm;
+  -moz-box-shadow: 15px 40px 25px 0px rgba(211,211,211,0.5);
+  -webkit-box-shadow: 15px 40px 25px 0px rgba(211,211,211,0.5);
+  box-shadow: 15px 40px 25px 0px rgba(211,211,211,0.5);
+  margin: 2vh 0;
+  border-radius: 4px;
+}
