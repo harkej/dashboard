@@ -1,2 +1,3 @@
-# react-redux-boilerplate
-Basic React-Redux boilerplate with webpack, material-UI and react-router
+# Dashboard
+
+A dashboard for a cryptocurrency marketplace built using reactjs
